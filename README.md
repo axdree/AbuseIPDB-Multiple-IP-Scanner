@@ -36,8 +36,8 @@ Option 2:
 3. Ensure no file is selected (Click Remove below `Browse File` if not) then click `RUN`
 
 4. Results can be found in `results.xlsx`
-
-
-
+<br>
+<br>
+<br>
 Note:
 This project is still in the early stages of development and you will face bugs!
