@@ -203,8 +203,6 @@ def run(manual):
             if msgboxresult == True:
                 os.system("start EXCEL.EXE results.xlsx")
                 GUI.destroy()
-            else:
-                GUI.destroy()
         elif filepath is not None and manual == '\n':            
             if api_key != "" or api_key != " ":
                 get_report(checkipfromfile(filepath))
@@ -216,8 +214,6 @@ def run(manual):
             msgboxresult = tkinter.messagebox.askyesno(title="AbuseIPDB Scanner", message="Success! Would you like to see Results?")
             if msgboxresult == True:
                 os.system("start EXCEL.EXE results.xlsx")
-                GUI.destroy()
-            else:
                 GUI.destroy()
         else:
             msgboxresult = tkinter.messagebox.showerror(title="AbuseIPDB Scanner", message="An Error occured.\nPlease ensure manual box is empty if is used")
