@@ -7,12 +7,13 @@ from tkinter import *
 from tkinter import filedialog
 import tkinter.messagebox
 import os
+import configparser
 from openpyxl.styles import Border, Side
 from openpyxl.formatting.rule import ColorScaleRule, FormulaRule
 
-apifile = open("API_KEY.ini", "r+")
-api_key = apifile.read()
-apifile.close()
+config = configparser.ConfigParser()
+config.read(r"API_KEY.ini")
+api_key = config.get('Auth', 'API_KEY')
 
 filepath = None
 
