@@ -193,7 +193,7 @@ def removetext():
 def run(manual):
     try:
         if manual != '\n' and filepath is None:
-            if api_key != "" or api_key != " ":
+            if api_key != "" or api_key != " " or api_key != None:
                 get_report(checkipfrominput(manual))
             else:
                 tkinter.messagebox.showinfo(title="AbuseIPDB Scanner", message="Error. No API Key Found.")
@@ -205,7 +205,7 @@ def run(manual):
                 os.system("start EXCEL.EXE results.xlsx")
                 GUI.destroy()
         elif filepath is not None and manual == '\n':            
-            if api_key != "" or api_key != " ":
+            if api_key != "" or api_key != " " or api_key != None:
                 get_report(checkipfromfile(filepath))
             else:
                 tkinter.messagebox.showinfo(title="AbuseIPDB Scanner", message="Error. No API Key Found.")
