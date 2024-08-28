@@ -3,7 +3,7 @@ This tool allows you to query multiple IP's reputation from AbuseIPDB in a short
 
 ## Installation
 1. Clone this Repository
-    `git clone https://github.com/lightcoxa/AbuseIPDB-MultipleIP-Scanner`
+    `git clone https://github.com/axdree/AbuseIPDB-MultipleIP-Scanner`
 
 2. Ensure you have [Python 3.7+](https://www.python.org/downloads/release/python-379/)
 3. Insert your [API Key](https://www.abuseipdb.com/account/api) into `API_KEY.ini`
